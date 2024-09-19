@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+
+    <!-- Top Bar (Toolbar) -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Toolbar stays fixed at the top -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <!-- App Logo (日本語) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日本語"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:layout_gravity="center" />
+
+            <!-- Configuration button -->
+            <ImageButton
+                android:id="@+id/config_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_settings"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_gravity="end"
+                android:padding="8dp" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- ScrollView for the content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"> <!-- Ensures ScrollView takes full screen -->
+
+            <!-- Content that scrolls -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/colorBackground">
+
+                <!-- Block 1: Progress Bar -->
+                <include layout="@layout/view_block_progress"/>
+
+                <!-- Block 2: Calendar-like elements -->
+                <include layout="@layout/view_block_calendar"/>
+
+                <!-- Block 3: Navigation Buttons -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorButtonBackground"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lecciones"
+                        android:backgroundTint="@color/colorButtonBackground"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+
+                <!-- Pruebas Block -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorButtonBackground"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pruebas"
+                        android:backgroundTint="@color/colorButtonBackground"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+
+                <!-- Búsqueda Block -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorButtonBackground"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <Button
+                        android:id="@+id/busqueda_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Búsqueda"
+                        android:backgroundTint="@color/colorButtonBackground"
+                        android:textColor="@color/colorText" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Navigation Drawer content -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

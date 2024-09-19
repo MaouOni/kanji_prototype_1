@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.kanji_prototype_1" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Use Dark Theme Colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:textColor">@color/colorText</item>
+
+        <!-- Customize buttons, text, etc. -->
+        <item name="buttonStyle">@style/ButtonStyle.Dark</item>
+    </style>
+
+    <!-- Dark button style -->
+    <style name="ButtonStyle.Dark" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@color/colorButtonBackground</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+</resources>

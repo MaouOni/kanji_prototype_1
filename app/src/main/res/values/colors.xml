@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#1E1E1E</color> <!-- Dark Gray -->
+    <color name="colorPrimaryDark">#121212</color> <!-- Even Darker Gray -->
+    <color name="colorAccent">#BB86FC</color> <!-- Light Purple Accent -->
+    <color name="colorBackground">#121212</color> <!-- Dark Background -->
+    <color name="colorText">#E0E0E0</color> <!-- Light Gray for Text -->
+    <color name="colorButtonBackground">#2C2C2C</color> <!-- Dark Button Background -->
+</resources>

@@ -1,0 +1,5 @@
+org.opencv.test.openCVLibrary-androidTest-0 C:\Users\MaouOni\AndroidStudioProjects\kanji_prototype_1\openCVLibrary\build\generated\res\resValues\androidTest\debug
+org.opencv.test.openCVLibrary-mergeDebugAndroidTestResources-1 C:\Users\MaouOni\AndroidStudioProjects\kanji_prototype_1\openCVLibrary\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+org.opencv.test.openCVLibrary-mergeDebugAndroidTestResources-2 C:\Users\MaouOni\AndroidStudioProjects\kanji_prototype_1\openCVLibrary\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+org.opencv.test.openCVLibrary-debugAndroidTest-3 C:\Users\MaouOni\AndroidStudioProjects\kanji_prototype_1\openCVLibrary\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources
+org.opencv.test.openCVLibrary-debug-4 C:\Users\MaouOni\AndroidStudioProjects\kanji_prototype_1\openCVLibrary\build\intermediates\packaged_res\debug\packageDebugResources

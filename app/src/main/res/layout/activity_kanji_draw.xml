@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <!-- Top Bar (Toolbar) -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="Kanji" />
+
+    <!-- Title or instructions -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dibuje su Kanji"
+        android:textSize="20sp"
+        android:textColor="@color/colorText"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+    <!-- Square Frame for canvas and grid -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="16dp">
+
+        <!-- Drawing Canvas (where the user will draw) -->
+        <com.example.kanji_prototype_1.ui.view.KanjiCanvasView
+            android:id="@+id/kanji_canvas_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@android:color/white" />
+
+        <!-- Transparent overlay with the 4 squares (as a guide) -->
+        <com.example.kanji_prototype_1.ui.view.KanjiGridOverlay
+            android:id="@+id/kanji_grid_overlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@android:color/transparent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- A Button to submit the drawing at the bottom -->
+    <Button
+        android:id="@+id/submit_drawing_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/colorButtonBackground"
+        android:textColor="@color/colorText" />
+
+</LinearLayout>
