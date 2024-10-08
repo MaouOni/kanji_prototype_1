@@ -10,12 +10,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import com.example.kanji_prototype_1.R;
 import com.example.kanji_prototype_1.ui.view.KanjiCanvasView;
+import com.example.kanji_prototype_1.ui.activity.ImagePreprocessor;
 import org.opencv.android.OpenCVLoader;
 import org.opencv.android.Utils;
-import org.opencv.core.CvType;
 import org.opencv.core.Mat;
-import org.opencv.core.Size;
-import org.opencv.imgproc.Imgproc;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -60,8 +58,10 @@ public class KanjiDrawActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Bitmap originalBitmap = kanjiCanvasView.getBitmap();
 
-                // Apply OpenCV preprocessing (grayscale, blur, threshold, edge detection)
-                Bitmap preprocessedBitmap = applyOpenCVFilters(originalBitmap);
+                // Preprocess the image using ImagePreprocessor
+                Mat preprocessedMat = ImagePreprocessor.preprocessImage(originalBitmap);
+                Bitmap preprocessedBitmap = Bitmap.createBitmap(preprocessedMat.cols(), preprocessedMat.rows(), Bitmap.Config.ARGB_8888);
+                Utils.matToBitmap(preprocessedMat, preprocessedBitmap);
 
                 // Save both original and preprocessed images to gallery
                 saveImageToGallery(KanjiDrawActivity.this, originalBitmap, "original_kanji");
@@ -116,35 +116,6 @@ public class KanjiDrawActivity extends AppCompatActivity {
     // Helper method to get the current timestamp
     private String getTimestamp() {
         return new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(new Date());
-    }
-
-    // Apply OpenCV filters (grayscale, blur, threshold, and edge detection)
-    private Bitmap applyOpenCVFilters(Bitmap bitmap) {
-        // Convert Bitmap to Mat
-        Mat srcMat = new Mat(bitmap.getHeight(), bitmap.getWidth(), CvType.CV_8UC4);
-        Utils.bitmapToMat(bitmap, srcMat);
-
-        // Convert to grayscale
-        Mat grayMat = new Mat();
-        Imgproc.cvtColor(srcMat, grayMat, Imgproc.COLOR_RGBA2GRAY);
-
-        // Apply Gaussian Blur to remove noise
-        Mat blurredMat = new Mat();
-        Imgproc.GaussianBlur(grayMat, blurredMat, new Size(5, 5), 0);
-
-        // Apply thresholding to convert the image to black and white
-        Mat thresholdMat = new Mat();
-        Imgproc.threshold(blurredMat, thresholdMat, 127, 255, Imgproc.THRESH_BINARY);
-
-        // Optional: Apply Canny edge detection to detect edges
-        Mat edgesMat = new Mat();
-        Imgproc.Canny(thresholdMat, edgesMat, 100, 200);
-
-        // Convert back to Bitmap
-        Bitmap processedBitmap = Bitmap.createBitmap(edgesMat.cols(), edgesMat.rows(), Bitmap.Config.ARGB_8888);
-        Utils.matToBitmap(edgesMat, processedBitmap);
-
-        return processedBitmap;
     }
 
     @Override
