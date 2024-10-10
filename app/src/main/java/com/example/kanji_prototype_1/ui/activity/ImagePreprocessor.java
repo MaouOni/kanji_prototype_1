@@ -19,16 +19,16 @@ public class ImagePreprocessor {
         // Convert the image to grayscale
         Imgproc.cvtColor(mat, mat, Imgproc.COLOR_BGR2GRAY);
 
-        // Resize the image to 64x64 pixels
-        Imgproc.resize(mat, mat, new Size(64, 64));
-
-        // Apply binary thresholding
-        // Thresholding at value 128 with max value 255 (white)
-        Imgproc.threshold(mat, mat, 128, 255, Imgproc.THRESH_BINARY);
-
-        // Invert the image so the Kanji is white and the background is black
+        // Invert the grayscale image so Kanji becomes white, background becomes black
         Core.bitwise_not(mat, mat);
 
-        return mat;
+        // Apply adaptive thresholding (optional)
+        Mat thresholdMat = new Mat();
+        Imgproc.threshold(mat, thresholdMat, 40, 255, Imgproc.THRESH_BINARY);
+
+        // Resize the image to 64x64 pixels AFTER inversion
+        Imgproc.resize(thresholdMat, thresholdMat, new Size(128, 128));
+
+        return thresholdMat;
     }
 }
