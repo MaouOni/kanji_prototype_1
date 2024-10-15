@@ -1,0 +1,77 @@
+import os
+import csv
+
+# Rutas
+RUTA_IMAGENES = '/home/jvralph/Proyecto/Nuevo/Datos/ETL_DATABASE/imagenes/ETL9G/'
+RUTA_SALIDA_CSV = '/home/jvralph/Proyecto/Nuevo/Datos/ETL_DATABASE/etiquetas_kanji.csv'
+
+# Función para leer el contenido del archivo .char.txt
+def leer_archivo_char(ruta_archivo_char):
+    with open(ruta_archivo_char, 'r', encoding='utf-8') as f:
+        return f.read().strip()
+
+# Crear o abrir un archivo CSV para guardar el mapeo
+with open(RUTA_SALIDA_CSV, mode='w', newline='', encoding='utf-8') as archivo_csv:
+    escritor_csv = csv.writer(archivo_csv)
+    
+    # Escribir encabezado en el CSV
+    escritor_csv.writerow(['Carpeta', 'Kanji', 'Imagen'])
+
+    # Iterar sobre las carpetas dentro de la ruta de imágenes
+    for carpeta_kanji in os.listdir(RUTA_IMAGENES):
+        ruta_carpeta_kanji = os.path.join(RUTA_IMAGENES, carpeta_kanji)
+
+        # Asegurarse de que es un directorio
+        if os.path.isdir(ruta_carpeta_kanji):
+            # Leer el archivo .char.txt para obtener el Kanji asociado
+            ruta_archivo_char = os.path.join(ruta_carpeta_kanji, '.char.txt')
+            if os.path.exists(ruta_archivo_char):
+                caracter_kanji = leer_archivo_char(ruta_archivo_char)
+            else:
+                caracter_kanji = 'Desconocido'
+
+            # Iterar sobre las imágenes dentro de cada carpeta
+            for archivo_imagen in os.listdir(ruta_carpeta_kanji):
+                if archivo_imagen.endswith('.png'):
+                    # Escribir en el archivo CSV: Carpeta, Kanji, Imagen
+                    escritor_csv.writerow([carpeta_kanji, caracter_kanji, archivo_imagen])
+
+print(f"Archivo CSV generado en: {RUTA_SALIDA_CSV}")
+
+import os
+import shutil
+
+# Definir las rutas
+RUTA_IMAGENES_ORIGINALES = '/home/jvralph/Proyecto/Nuevo/Datos/ETL_DATABASE/imagenes/ETL9G/'
+RUTA_IMAGENES_PROCESADAS = '/home/jvralph/Proyecto/Nuevo/Datos/ETL_DATABASE/imagenes_procesadas/'
+
+# Función para copiar el archivo .char.txt
+def copiar_archivo_char(ruta_origen, ruta_procesada):
+    archivo_char = os.path.join(ruta_origen, '.char.txt')
+    
+    if os.path.exists(archivo_char):
+        # Copiar el archivo .char.txt a la carpeta procesada
+        shutil.copy(archivo_char, ruta_procesada)
+        print(f"Copiado: {archivo_char} a {ruta_procesada}")
+    else:
+        print(f"Advertencia: No se encontró .char.txt en {ruta_origen}")
+
+# Función para copiar los .char.txt de cada carpeta
+def copiar_todos_archivos_char(ruta_origen, ruta_procesada):
+    # Iterar sobre todas las carpetas en la ruta original
+    for carpeta_kanji in os.listdir(ruta_origen):
+        ruta_origen_carpeta_kanji = os.path.join(ruta_origen, carpeta_kanji)
+        ruta_procesada_carpeta_kanji = os.path.join(ruta_procesada, carpeta_kanji)
+
+        # Verificar que ambas rutas son directorios
+        if os.path.isdir(ruta_origen_carpeta_kanji) and os.path.isdir(ruta_procesada_carpeta_kanji):
+            # Copiar el archivo .char.txt si existe
+            copiar_archivo_char(ruta_origen_carpeta_kanji, ruta_procesada_carpeta_kanji)
+        else:
+            print(f"Advertencia: {carpeta_kanji} no es un directorio válido en uno de los conjuntos")
+
+# Llamar a la función para copiar los archivos .char.txt
+copiar_todos_archivos_char(RUTA_IMAGENES_ORIGINALES, RUTA_IMAGENES_PROCESADAS)
+
+print("Copia de archivos .char.txt completada.")
+
