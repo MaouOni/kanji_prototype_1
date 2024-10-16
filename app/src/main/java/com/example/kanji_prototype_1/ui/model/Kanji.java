@@ -12,6 +12,9 @@ public class Kanji {
     private List<String> examples;
     private String strokeOrderGif;
 
+    public Kanji(int i, String 二, String two, String s, String[] strings, String[] strings1, String[] strings2, String s1) {
+    }
+
     // Getters and setters for each field
     public int getId() {
         return id;

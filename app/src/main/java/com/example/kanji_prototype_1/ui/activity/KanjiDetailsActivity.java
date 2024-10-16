@@ -1,37 +1,54 @@
 package com.example.kanji_prototype_1.ui.activity;
 
 import android.os.Bundle;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
-import com.bumptech.glide.Glide;
+
 import com.example.kanji_prototype_1.R;
-import com.example.kanji_prototype_1.data.KanjiDataRepository;
+import com.example.kanji_prototype_1.ui.data.KanjiDataRepository;
 import com.example.kanji_prototype_1.ui.model.Kanji;
+
+import java.util.List;
 
 public class KanjiDetailsActivity extends AppCompatActivity {
 
     private KanjiDataRepository kanjiDataRepository;
+    private List<Kanji> kanjiList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kanji_details);
 
+        // Initialize KanjiDataRepository and load Kanji list
         kanjiDataRepository = new KanjiDataRepository(this);
+        kanjiList = kanjiDataRepository.getKanjiList(); // Load from JSON
 
         // Get the Kanji ID passed from the previous activity
         int kanjiId = getIntent().getIntExtra("KANJI_ID", -1);
 
-        // Fetch Kanji data using the ID
-        Kanji kanji = kanjiDataRepository.getKanjiById(kanjiId);
+        // Fetch the Kanji object by its ID
+        Kanji kanji = getKanjiById(kanjiId);
 
         if (kanji != null) {
-            populateKanjiDetails(kanji);
+            populateKanjiDetails(kanji); // Populate UI with Kanji details
         }
     }
 
+    // Method to get Kanji by its ID
+    private Kanji getKanjiById(int id) {
+        if (kanjiList != null) {
+            for (Kanji kanji : kanjiList) {
+                if (kanji.getId() == id) {
+                    return kanji;
+                }
+            }
+        }
+        return null; // Return null if Kanji with the given ID is not found
+    }
+
+    // Method to populate Kanji details in the UI
     private void populateKanjiDetails(Kanji kanji) {
         // Populate the Kanji details in the layout
         TextView kanjiCharacter = findViewById(R.id.kanji_character);
@@ -52,7 +69,7 @@ public class KanjiDetailsActivity extends AppCompatActivity {
         example1.setText(kanji.getExamples().get(0));
         example2.setText(kanji.getExamples().get(1));
 
-        // Load the stroke order GIF (using Glide or another image loader)
-        Glide.with(this).load(kanji.getStrokeOrderGif()).into(strokeOrderGif);
+        // Remove stroke order GIF loading for now
+        // Glide.with(this).load(kanji.getStrokeOrderGif()).into(strokeOrderGif);
     }
 }

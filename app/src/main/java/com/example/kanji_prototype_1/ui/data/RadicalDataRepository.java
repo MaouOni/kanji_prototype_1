@@ -1,4 +1,4 @@
-package com.example.kanji_prototype_1.data;
+package com.example.kanji_prototype_1.ui.data;
 
 import android.content.Context;
 import com.example.kanji_prototype_1.ui.model.Radical;

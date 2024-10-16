@@ -26,7 +26,7 @@ public class KanjiCanvasView extends View {
         drawPaint = new Paint();
         drawPaint.setColor(Color.BLACK);       // Set drawing color to black
         drawPaint.setAntiAlias(true);          // Smooth edges of the drawing
-        drawPaint.setStrokeWidth(10);          // Set stroke width
+        drawPaint.setStrokeWidth(30);          // Set stroke width
         drawPaint.setStyle(Paint.Style.STROKE); // Only draw outlines
         drawPaint.setStrokeJoin(Paint.Join.ROUND); // Join lines smoothly
         drawPaint.setStrokeCap(Paint.Cap.ROUND);   // Smooth end of lines

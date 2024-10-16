@@ -5,36 +5,66 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Search Input Field -->
-    <EditText
-        android:id="@+id/search_text"
+    <!-- Row layout for the search text, draw button, and send button -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Search for Kanji..."
-        android:padding="12dp"
-        android:drawableEnd="@drawable/ic_draw_button" />
+        android:orientation="horizontal">
 
-    <!-- OR Divider -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OR"
-        android:textSize="18sp"
-        android:layout_marginVertical="16dp"
-        android:gravity="center_horizontal"
-        android:layout_gravity="center_horizontal" />
+        <!-- Search Input Field -->
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Buscar Kanji..."
+            android:padding="12dp"
+            android:inputType="text"
+            android:singleLine="true" />
 
-    <!-- Draw Button -->
-    <Button
-        android:id="@+id/draw_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Draw Kanji"
-        android:backgroundTint="@android:color/holo_blue_dark"
-        android:textColor="@android:color/white"
-        android:padding="12dp"
-        android:layout_gravity="center_horizontal"
-        android:drawableStart="@drawable/ic_draw_button" />
+        <!-- Draw Button (square-shaped) -->
+        <Button
+            android:id="@+id/draw_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text=""
+            android:drawableStart="@drawable/ic_draw_button"
+            android:background="@drawable/ic_draw_button" /> <!-- Custom drawable for icon only -->
+
+        <!-- Send Button (square-shaped) -->
+        <Button
+            android:id="@+id/send_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text=""
+            android:drawableStart="@drawable/ic_send_arrow"
+            android:background="@drawable/ic_send_arrow" /> <!-- Custom drawable for icon only -->
+    </LinearLayout>
+
+    <!-- Drawing area (hidden initially) -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:id="@+id/drawing_container">
+
+        <!-- Kanji CanvasView -->
+        <com.example.kanji_prototype_1.ui.view.KanjiCanvasView
+            android:id="@+id/drawing_canvas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+
+        <!-- Kanji Grid Overlay -->
+        <com.example.kanji_prototype_1.ui.view.KanjiGridOverlay
+            android:id="@+id/kanji_grid_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+    </FrameLayout>
 
     <!-- Placeholder for RecyclerView (search results) -->
     <androidx.recyclerview.widget.RecyclerView
@@ -44,6 +74,4 @@
         android:layout_weight="1"
         android:layout_marginTop="16dp"
         android:scrollbars="vertical" />
-
-    <!-- Placeholder for Neural Network results (if implemented) -->
 </LinearLayout>
