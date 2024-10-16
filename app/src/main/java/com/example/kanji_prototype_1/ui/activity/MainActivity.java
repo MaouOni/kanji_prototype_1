@@ -35,9 +35,11 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(item -> {
             int id = item.getItemId();
             if (id == R.id.nav_lecciones) {
-                startActivity(new Intent(MainActivity.this, LearningActivity.class));
-            } else if (id == R.id.nav_busqueda) {
+                // Go to the KanjiDrawActivity for drawing lessons
                 startActivity(new Intent(MainActivity.this, KanjiInputActivity.class));
+            } else if (id == R.id.nav_busqueda) {
+                // Go to the KanjiSearchActivity for searching Kanji
+                startActivity(new Intent(MainActivity.this, KanjiSearchActivity.class));
             }
             return true;
         });
@@ -49,10 +51,10 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        // Link the busqueda_button to KanjiDrawActivity
+        // Link the busqueda_button to KanjiSearchActivity
         Button busquedaButton = findViewById(R.id.busqueda_button);
         busquedaButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, KanjiInputActivity.class);
+            Intent intent = new Intent(MainActivity.this, KanjiSearchActivity.class);
             startActivity(intent);
         });
     }
