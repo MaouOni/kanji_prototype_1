@@ -1,0 +1,43 @@
+{
+    "kanji": [
+      {
+        "id": 1,
+        "character": "一",
+        "heisig": "One",
+        "meaning": "One, first",
+        "onyomi": ["イチ", "イツ"],
+        "kunyomi": ["ひと"],
+        "examples": [
+          "一人 (ひとり) - One person",
+          "一日 (いちにち) - One day"
+        ],
+        "strokeOrderGif": "path/to/one_stroke_order.gif",
+        "radicals": [
+          {
+            "radical": "一",
+            "meaning": "One"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "character": "二",
+        "heisig": "Two",
+        "meaning": "Two, second",
+        "onyomi": ["ニ"],
+        "kunyomi": ["ふた"],
+        "examples": [
+          "二人 (ふたり) - Two people",
+          "二日 (ふつか) - Two days"
+        ],
+        "strokeOrderGif": "path/to/two_stroke_order.gif",
+        "radicals": [
+          {
+            "radical": "二",
+            "meaning": "Two"
+          }
+        ]
+      }
+    ]
+  }
+  

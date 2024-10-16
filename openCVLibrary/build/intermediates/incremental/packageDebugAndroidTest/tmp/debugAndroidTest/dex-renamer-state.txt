@@ -1,4 +1,4 @@
-#Wed Sep 18 12:22:00 MDT 2024
+#Wed Oct 16 15:55:22 CST 2024
 base.0=C\:\\Users\\MaouOni\\AndroidStudioProjects\\kanji_prototype_1\\openCVLibrary\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
 base.1=C\:\\Users\\MaouOni\\AndroidStudioProjects\\kanji_prototype_1\\openCVLibrary\\build\\intermediates\\dex\\debugAndroidTest\\mergeLibDexDebugAndroidTest\\0\\classes.dex
 base.2=C\:\\Users\\MaouOni\\AndroidStudioProjects\\kanji_prototype_1\\openCVLibrary\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\0\\classes.dex

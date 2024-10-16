@@ -9,9 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kanji_prototype_1">
 
-        <activity android:name=".ui.activity.LessonsActivity" />
+        <activity android:name=".ui.activity.LearningActivity" />
         <activity android:name=".ui.activity.TestsActivity" />
-        <activity android:name=".ui.activity.KanjiDrawActivity" />
+        <activity android:name=".ui.activity.KanjiInputActivity" />
         <activity android:name=".ui.activity.SettingsActivity" />
         <activity android:name=".ui.activity.MainActivity"
             android:exported="true">

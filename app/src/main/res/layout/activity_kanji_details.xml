@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Kanji Character Display -->
+        <TextView
+            android:id="@+id/kanji_character"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="64sp"
+            android:text="一"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Stroke Order GIF -->
+        <ImageView
+            android:id="@+id/stroke_order_gif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Stroke Order GIF"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/stroke_order_placeholder" /> <!-- Placeholder for now -->
+
+        <!-- Heisig Description -->
+        <TextView
+            android:id="@+id/heisig_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heisig Description: One"
+            android:textSize="18sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Readings Section (Onyomi, Kunyomi) -->
+        <TextView
+            android:id="@+id/readings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Readings:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/onyomi_reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Onyomi: イチ, イツ" />
+
+        <TextView
+            android:id="@+id/kunyomi_reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kunyomi: ひと" />
+
+        <!-- Kanji Meaning -->
+        <TextView
+            android:id="@+id/meaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meaning: One, First"
+            android:layout_marginTop="16dp" />
+
+        <!-- Examples Section -->
+        <TextView
+            android:id="@+id/examples_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Examples:"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/example_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一人 (ひとり) - One person" />
+
+        <TextView
+            android:id="@+id/example_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一日 (いちにち) - One day" />
+
+        <!-- Story Input and Validation -->
+        <EditText
+            android:id="@+id/user_story_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write your story here"
+            android:layout_marginTop="16dp" />
+
+        <!-- Story Validation Status -->
+        <TextView
+            android:id="@+id/radical_validation_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radical Validation: partial"
+            android:layout_marginTop="12dp"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <!-- Radical Validation Suggestion -->
+        <TextView
+            android:id="@+id/radical_validation_suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your story is missing the radical '一', representing 'one'. Consider adding a reference."
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+</ScrollView>
