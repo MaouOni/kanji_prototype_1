@@ -13,9 +13,15 @@ import java.util.List;
 public class KanjiAdapter extends RecyclerView.Adapter<KanjiAdapter.KanjiViewHolder> {
 
     private List<Kanji> kanjiList;
+    private final OnItemClickListener clickListener;
 
-    public KanjiAdapter(List<Kanji> kanjiList) {
+    public interface OnItemClickListener {
+        void onItemClick(Kanji kanji);
+    }
+
+    public KanjiAdapter(List<Kanji> kanjiList, OnItemClickListener clickListener) {
         this.kanjiList = kanjiList;
+        this.clickListener = clickListener;
     }
 
     @NonNull
@@ -28,9 +34,7 @@ public class KanjiAdapter extends RecyclerView.Adapter<KanjiAdapter.KanjiViewHol
     @Override
     public void onBindViewHolder(@NonNull KanjiViewHolder holder, int position) {
         Kanji kanji = kanjiList.get(position);
-        holder.kanjiText.setText(kanji.getCharacter());  // Assuming getCharacter() returns the Kanji character
-        holder.heisigText.setText("ID: " + kanji.getId() + " - " + kanji.getHeisig());
-        holder.meaningText.setText(kanji.getMeaning());
+        holder.bind(kanji, clickListener);
     }
 
     @Override
@@ -52,6 +56,14 @@ public class KanjiAdapter extends RecyclerView.Adapter<KanjiAdapter.KanjiViewHol
             kanjiText = itemView.findViewById(R.id.kanji_text);
             heisigText = itemView.findViewById(R.id.heisig_text);
             meaningText = itemView.findViewById(R.id.meaning_text);
+        }
+
+        void bind(Kanji kanji, OnItemClickListener clickListener) {
+            kanjiText.setText(kanji.getKanji());
+            heisigText.setText("ID: " + kanji.getId() + " - " + kanji.getHeisig());
+            meaningText.setText(kanji.getMeaning());
+
+            itemView.setOnClickListener(v -> clickListener.onItemClick(kanji));
         }
     }
 }

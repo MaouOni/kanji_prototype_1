@@ -1,77 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:orientation="vertical">
 
-    <!-- Row layout for the search text, draw button, and send button -->
+    <!-- Toolbar at the top with back button enabled -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:title="Buscar Kanji"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <!-- Search Input Field -->
-        <EditText
-            android:id="@+id/search_text"
-            android:layout_width="0dp"
+        <!-- Search, Draw, and Send Button Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/search_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Buscar Kanji..."
+                android:padding="12dp"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/draw_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/colorAccent"
+                android:background="@drawable/ic_draw_button"
+                android:text="" />
+
+            <Button
+                android:id="@+id/send_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/colorAccent"
+                android:background="@drawable/ic_send_arrow"
+                android:text="" />
+        </LinearLayout>
+
+        <!-- Drawing area (hidden initially) -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"
+            android:id="@+id/drawing_container">
+
+            <com.example.kanji_prototype_1.ui.view.KanjiCanvasView
+                android:id="@+id/drawing_canvas"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <com.example.kanji_prototype_1.ui.view.KanjiGridOverlay
+                android:id="@+id/kanji_grid_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent" />
+        </FrameLayout>
+
+        <!-- RecyclerView for search results without surrounding block -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/kanji_results_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
-            android:hint="Buscar Kanji..."
-            android:padding="12dp"
-            android:inputType="text"
-            android:singleLine="true" />
-
-        <!-- Draw Button (square-shaped) -->
-        <Button
-            android:id="@+id/draw_button"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/colorAccent"
-            android:text=""
-            android:drawableStart="@drawable/ic_draw_button"
-            android:background="@drawable/ic_draw_button" /> <!-- Custom drawable for icon only -->
-
-        <!-- Send Button (square-shaped) -->
-        <Button
-            android:id="@+id/send_button"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/colorAccent"
-            android:text=""
-            android:drawableStart="@drawable/ic_send_arrow"
-            android:background="@drawable/ic_send_arrow" /> <!-- Custom drawable for icon only -->
+            android:layout_marginTop="16dp"
+            android:scrollbars="vertical" />
     </LinearLayout>
-
-    <!-- Drawing area (hidden initially) -->
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_marginTop="16dp"
-        android:visibility="gone"
-        android:id="@+id/drawing_container">
-
-        <!-- Kanji CanvasView -->
-        <com.example.kanji_prototype_1.ui.view.KanjiCanvasView
-            android:id="@+id/drawing_canvas"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/white" />
-
-        <!-- Kanji Grid Overlay -->
-        <com.example.kanji_prototype_1.ui.view.KanjiGridOverlay
-            android:id="@+id/kanji_grid_overlay"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent" />
-    </FrameLayout>
-
-    <!-- Placeholder for RecyclerView (search results) -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/kanji_results_recycler"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginTop="16dp"
-        android:scrollbars="vertical" />
 </LinearLayout>

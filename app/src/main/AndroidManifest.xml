@@ -13,6 +13,7 @@
         <activity android:name=".ui.activity.KanjiInputActivity" />
         <activity android:name=".ui.activity.KanjiSearchActivity" />
         <activity android:name=".ui.activity.SettingsActivity" />
+        <activity android:name=".ui.activity.KanjiDetailsActivity" />
         <activity android:name=".ui.activity.MainActivity"
             android:exported="true">
             <intent-filter>

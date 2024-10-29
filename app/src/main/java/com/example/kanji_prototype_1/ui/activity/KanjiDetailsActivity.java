@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.example.kanji_prototype_1.R;
 import com.example.kanji_prototype_1.ui.data.KanjiDataRepository;
@@ -20,6 +21,10 @@ public class KanjiDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kanji_details);
+
+        // Set up the toolbar
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         // Initialize KanjiDataRepository and load Kanji list
         kanjiDataRepository = new KanjiDataRepository(this);
@@ -61,15 +66,21 @@ public class KanjiDetailsActivity extends AppCompatActivity {
         ImageView strokeOrderGif = findViewById(R.id.stroke_order_gif);
 
         // Set Kanji details
-        kanjiCharacter.setText(kanji.getCharacter());
-        heisigDescription.setText("Heisig Description: " + kanji.getHeisig());
+        kanjiCharacter.setText(kanji.getKanji());
+        heisigDescription.setText("Heisig: " + kanji.getHeisig());
         onyomiReading.setText("Onyomi: " + String.join(", ", kanji.getOnyomi()));
         kunyomiReading.setText("Kunyomi: " + String.join(", ", kanji.getKunyomi()));
         meaning.setText("Meaning: " + kanji.getMeaning());
-        example1.setText(kanji.getExamples().get(0));
-        example2.setText(kanji.getExamples().get(1));
+        example1.setText(kanji.getExamples().size() > 0 ? kanji.getExamples().get(0) : "");
+        example2.setText(kanji.getExamples().size() > 1 ? kanji.getExamples().get(1) : "");
 
-        // Remove stroke order GIF loading for now
+        // Optional: Load the stroke order GIF if available
         // Glide.with(this).load(kanji.getStrokeOrderGif()).into(strokeOrderGif);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();  // Navigate back to previous activity
+        return true;
     }
 }
