@@ -1,0 +1,310 @@
+[
+  {
+    "id": 1,
+    "heisig": "Uno",
+    "kanji": "一",
+    "meaning": "Uno, primera línea horizontal",
+    "description": "Representa una sola línea horizontal."
+  },
+  {
+    "id": 7,
+    "heisig": "Siete",
+    "kanji": "七",
+    "meaning": "Siete, cortado",
+    "description": "Una línea que atraviesa otra, simbolizando corte."
+  },
+  {
+    "id": 9,
+    "heisig": "Nueve",
+    "kanji": "九",
+    "meaning": "Nueve, curva",
+    "description": "Curva en su forma, representa el número nueve."
+  },
+  {
+    "id": 10,
+    "heisig": "Diez",
+    "kanji": "十",
+    "meaning": "Diez, cruz",
+    "description": "Una cruz que representa el número diez."
+  },
+  {
+    "id": 11,
+    "heisig": "Boca",
+    "kanji": "口",
+    "meaning": "Boca, apertura",
+    "description": "Un cuadrado que representa la boca o una abertura."
+  },
+  {
+    "id": 12,
+    "heisig": "Día/Sol",
+    "kanji": "日",
+    "meaning": "Día, sol",
+    "description": "Un cuadrado con una línea, representando el sol o un día."
+  },
+  {
+    "id": 13,
+    "heisig": "Mes",
+    "kanji": "月",
+    "meaning": "Mes, luna",
+    "description": "Representa la luna, asociada con el paso del tiempo o un mes."
+  },
+  {
+    "id": 14,
+    "heisig": "Campo de arroz",
+    "kanji": "田",
+    "meaning": "Campo de arroz",
+    "description": "Un cuadrado dividido en cuatro, visto desde arriba como un campo de arroz."
+  },
+  {
+    "id": 15,
+    "heisig": "Ojo",
+    "kanji": "目",
+    "meaning": "Ojo",
+    "description": "Representa un ojo; visualmente se asemeja a un ojo estilizado."
+  },
+  {
+    "id": 22,
+    "heisig": "Viejo",
+    "kanji": "古",
+    "meaning": "Antiguo, viejo",
+    "description": "Un símbolo que representa lo antiguo o los días pasados."
+  },
+  {
+    "id": 26,
+    "heisig": "Temprano",
+    "kanji": "早",
+    "meaning": "Temprano, rápido",
+    "description": "Una planta que crece temprano bajo el sol, simboliza el inicio del día."
+  },
+  {
+    "id": "palo",
+    "heisig": "Palo para caminar",
+    "kanji": "丨",
+    "meaning": "Bastón, línea vertical",
+    "description": "Un bastón o línea vertical usado como soporte en otros kanjis."
+  },
+  {
+    "id": "gota",
+    "heisig": "Gota",
+    "kanji": "丶",
+    "meaning": "Gota, pequeño punto",
+    "description": "Una gota o punto que se usa para representar algo pequeño o un detalle importante."
+  },
+  {
+    "id": 37,
+    "heisig": "Blanco",
+    "kanji": "白",
+    "meaning": "Blanco",
+    "description": "El color blanco, simbolizado por una gota de sol."
+  },
+  {
+    "id": 44,
+    "heisig": "Redondear",
+    "kanji": "丸",
+    "meaning": "Redondear, círculo",
+    "description": "Representa la redondez o circularidad."
+  },
+  {
+    "id": 45,
+    "heisig": "Medida",
+    "kanji": "寸",
+    "meaning": "Medida, pulgada",
+    "description": "Un símbolo para medidas pequeñas, como pulgadas."
+  },
+  {
+    "id": 48,
+    "heisig": "Doctor",
+    "kanji": "博",
+    "meaning": "Doctor, experto",
+    "description": "Representa conocimiento profundo o especialización."
+  },
+  {
+    "id": "varita_magica",
+    "heisig": "Varita mágica",
+    "kanji": "卜",
+    "meaning": "Varita mágica",
+    "description": "Combinación de un palo para caminar y una gota, usada para simbolizar magia o predicción."
+  },
+  {
+    "id": "niebla",
+    "heisig": "Niebla",
+    "kanji": "\uE03C",
+    "meaning": "Niebla",
+    "description": "Formado por el radical de temprano y aguja, representa una bruma matutina o niebla."
+  },
+  {
+    "id": "patas_de_animal",
+    "heisig": "Patas de animal",
+    "kanji": "\uE050",
+    "meaning": "Patas de animal",
+    "description": "Representa las patas de cualquier tipo de animal, desde las patas de un oso hasta las patas de una araña."
+  },
+  {
+    "id": "piernas_humanas",
+    "heisig": "Piernas humanas",
+    "kanji": "儿",
+    "meaning": "Piernas humanas",
+    "description": "Las piernas humanas, estilizadas y más definidas que las de los animales, representan al ser humano caminando."
+  },
+  {
+    "id": "viento",
+    "heisig": "Viento",
+    "kanji": "几",
+    "meaning": "Viento, ráfaga",
+    "description": "Este radical simboliza una ráfaga de viento o una veleta, indicando movimiento y aire."
+  },
+  {
+    "id": "encadenado",
+    "heisig": "Encadenado",
+    "kanji": "勹",
+    "meaning": "Amarrado, encadenado",
+    "description": "Simboliza algo atado o envuelto, connotando restricción o compresión, como si estuviera atado con una cuerda."
+  },
+  {
+    "id": "cuernos",
+    "heisig": "Cuernos",
+    "kanji": null,
+    "meaning": "Cuernos",
+    "description": "Se usa para representar cuernos de animales como toros o cabras, y siempre aparece en la parte superior de otros elementos."
+  },
+  {
+    "id": "almeja",
+    "heisig": "Almeja",
+    "kanji": "貝",
+    "meaning": "Molusco, concha",
+    "description": "Un radical que representa una almeja o molusco, común en kanjis relacionados con dinero o valor."
+  },
+  {
+    "id": "pagina",
+    "heisig": "Página",
+    "kanji": "頁",
+    "meaning": "Página",
+    "description": "Representa una página, como en un libro o documento, simbolizando conocimiento o una hoja de información."
+  },
+  {
+    "id": "tripas_de_pescado",
+    "heisig": "Tripas de pescado",
+    "kanji": "乙",
+    "meaning": "Tripas, peculiar",
+    "description": "Un radical que representa las tripas de pescado o algo peculiar, a menudo se usa para denotar algo diferente o distintivo."
+  },
+  {
+    "id": "herramienta",
+    "heisig": "Herramienta",
+    "kanji": "具",
+    "meaning": "Instrumento",
+    "description": "Un elemento que representa la idea de un carpintero y sus herramientas, simbolizando el trabajo manual."
+  },
+  {
+    "id": "a_un_lado",
+    "heisig": "A un lado",
+    "kanji": "ナ",
+    "meaning": "Por un lado",
+    "description": "Este radical representa la acción de dejar algo a un lado o en proximidad."
+  },
+  {
+    "id": "construir",
+    "heisig": "Construir",
+    "kanji": "工",
+    "meaning": "Trabajo, fabricación",
+    "description": "Este radical representa el proceso de construcción o trabajo manual."
+  },
+  {
+    "id": "espada",
+    "heisig": "Espada",
+    "kanji": "刀",
+    "meaning": "Espada, sable",
+    "description": "Radical que simboliza el poder y la precisión en la batalla o decisiones."
+  },
+  {
+    "id": "seducir",
+    "heisig": "Seducir",
+    "kanji": "召",
+    "meaning": "Invocar, atraer",
+    "description": "Radical que representa la habilidad de invocar o atraer, simbolizando la persuasión."
+  },
+  {
+    "id": "rico",
+    "heisig": "Riqueza",
+    "kanji": "富",
+    "meaning": "Ser rico",
+    "descripcion": "Representa la riqueza o abundancia material, con la imagen de un campo bajo un techo, simbolizando una gran posesión de recursos."
+  },
+  {
+    "id": "completo",
+    "heisig": "Completo",
+    "kanji": "了",
+    "meaning": "Completo, finalizado",
+    "description": "Este radical representa la finalización o completitud de algo, indicando satisfacción o conclusión."
+  },
+  {
+    "id": "mujer",
+    "heisig": "Mujer",
+    "kanji": "女",
+    "meaning": "Mujer, femenino",
+    "description": "Radical que representa el género femenino, simbolizando a la mujer en su sentido más amplio."
+  },
+  {
+    "id": "mama",
+    "heisig": "Mamá",
+    "kanji": "母",
+    "meaning": "Madre, mamá",
+    "description": "Radical que simboliza a la madre, representando el concepto de cuidado y cariño maternal."
+  },
+  {
+    "id": "hermano_mayor",
+    "heisig": "Hermano Mayor",
+    "kanji": "兄",
+    "meaning": "Hermano mayor, adolescente",
+    "description": "Este radical representa a un hermano mayor o figura de autoridad juvenil."
+  },
+  {
+    "id": "pequeno",
+    "heisig": "Pequeño",
+    "kanji": "小",
+    "meaning": "Pequeño, diminuto",
+    "description": "Radical que indica algo pequeño o diminuto."
+  },
+  {
+    "id": "grande",
+    "heisig": "Grande",
+    "kanji": "大",
+    "meaning": "Grande, amplio",
+    "description": "Radical que representa algo de gran tamaño o importancia."
+  },
+  {
+    "id": "anochecer",
+    "heisig": "Anochecer",
+    "kanji": "夕",
+    "meaning": "Anochecer",
+    "description": "Representa el momento en que cae la noche, un cambio de luz a oscuridad."
+  },
+  {
+    "id": "piedra",
+    "heisig": "Piedra",
+    "kanji": "石",
+    "meaning": "Roca, piedra",
+    "description": "Este radical representa una roca o piedra sólida y fuerte."
+  },
+  {
+    "id": "semblanza",
+    "heisig": "Semblanza",
+    "kanji": "肖",
+    "meaning": "Semblanza, semejanza",
+    "description": "Radical que simboliza algo parecido o similar a otra cosa."
+  },
+  {
+    "id": "precipicio",
+    "heisig": "Precipicio",
+    "kanji": "厂",
+    "meaning": "Precipicio, acantilado",
+    "description": "Radical que representa un acantilado empinado, simbolizando altura y peligro."
+  },
+  {
+    "id": "corriente",
+    "heisig": "Corriente",
+    "kanji": "川, 巛, \uE082",
+    "meaning": "Río, corriente",
+    "description": "Simboliza una corriente de agua que fluye."
+  }
+]

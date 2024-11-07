@@ -2,19 +2,1301 @@
   {
     "id": 1,
     "kanji": "一",
-    "heisig": "One",
-    "meaning": "One, first",
+    "heisig": "Uno",
+    "meaning": "Uno, primero",
     "onyomi": ["イチ", "イツ"],
     "kunyomi": ["ひと"],
-    "examples": ["一人 (ひとり) - One person", "一日 (いちにち) - One day"]
+    "examples": ["一人 (ひとり) - Una persona", "一日 (いちにち) - Un día"],
+    "story": "Una línea horizontal que representa el piso o el cielo según su posición. Así se inicia el concepto de 'uno'.",
+    "radicales": ["Uno"]
   },
   {
     "id": 2,
     "kanji": "二",
-    "heisig": "Two",
-    "meaning": "Two, second",
+    "heisig": "Dos",
+    "meaning": "Dos, segundo",
     "onyomi": ["ニ"],
     "kunyomi": ["ふた"],
-    "examples": ["二人 (ふたり) - Two people", "二日 (ふつか) - Two days"]
+    "examples": ["二人 (ふたり) - Dos personas", "二日 (ふつか) - Dos días"],
+    "story": "Dos líneas horizontales, una sobre otra, representan el concepto de 'dos'. Se escriben de arriba hacia abajo, con la línea superior más corta.",
+    "radicales": ["Uno", "Uno"]
+  },
+  {
+    "id": 3,
+    "kanji": "三",
+    "heisig": "Tres",
+    "meaning": "Tres, tercero",
+    "onyomi": ["サン"],
+    "kunyomi": ["み"],
+    "examples": ["三人 (さんにん) - Tres personas", "三日 (みっか) - Tres días"],
+    "story": "Tres líneas horizontales, representando 'tres'. La línea del medio es más corta, en orden de '1 + 2 = 3'.",
+    "radicales": ["Uno", "Uno", "Uno"]
+  },
+  {
+    "id": 4,
+    "kanji": "四",
+    "heisig": "Cuatro",
+    "meaning": "Cuatro, cuarto",
+    "onyomi": ["シ"],
+    "kunyomi": ["よ", "よん", "よっ"],
+    "examples": ["四人 (よにん) - Cuatro personas", "四月 (しがつ) - Abril"],
+    "story": "Compuesto por 'boca' y 'piernas humanas'. Representa el número cuatro, siguiendo el principio de escritura de norte a sur y de oeste a este.",
+    "radicales": ["Boca", "Piernas humanas"]
+  },
+  {
+    "id": 5,
+    "kanji": "五",
+    "heisig": "Cinco",
+    "meaning": "Cinco, quinto",
+    "onyomi": ["ゴ"],
+    "kunyomi": ["いつ"],
+    "examples": ["五月 (ごがつ) - Mayo", "五人 (ごにん) - Cinco personas"],
+    "story": "Siguiendo el principio de escritura aprendido con 'cuatro', este kanji representa el número cinco.",
+    "radicales": ["Cinco"]
+  },
+  {
+    "id": 6,
+    "kanji": "六",
+    "heisig": "Seis",
+    "meaning": "Seis, sexto",
+    "onyomi": ["ロク"],
+    "kunyomi": ["む", "むっ", "むい"],
+    "examples": ["六月 (ろくがつ) - Junio", "六人 (ろくにん) - Seis personas"],
+    "story": "Primitivos: 'sombrero' y 'piernas de animal'. Representa el número seis, aunque sus componentes serán explicados después.",
+    "radicales": ["Sombrero", "Piernas de animal"]
+  },
+  {
+    "id": 7,
+    "kanji": "七",
+    "heisig": "Siete",
+    "meaning": "Siete, séptimo",
+    "onyomi": ["シチ"],
+    "kunyomi": ["なな", "なの"],
+    "examples": ["七月 (しちがつ) - Julio", "七人 (ななにん) - Siete personas"],
+    "story": "El trazo horizontal corta el vertical, simbolizando el 'corte' en el número siete.",
+    "radicales": ["Corte"]
+  },
+  {
+    "id": 8,
+    "kanji": "八",
+    "heisig": "Ocho",
+    "meaning": "Ocho, octavo",
+    "onyomi": ["ハチ"],
+    "kunyomi": ["や", "やっ", "よう"],
+    "examples": ["八月 (はちがつ) - Agosto", "八人 (はちにん) - Ocho personas"],
+    "story": "Dos líneas inclinadas que se separan representan el concepto de 'infinito', como el símbolo '∞'.",
+    "radicales": ["Separación"]
+  },
+  {
+    "id": 9,
+    "kanji": "九",
+    "heisig": "Nueve",
+    "meaning": "Nueve, noveno",
+    "onyomi": ["キュウ", "ク"],
+    "kunyomi": ["ここの"],
+    "examples": ["九月 (くがつ) - Septiembre", "九人 (きゅうにん) - Nueve personas"],
+    "story": "Un trazo que se curva al final. Representa el número nueve, diferenciándose de 'poder' (力) en la escritura.",
+    "radicales": ["Curva"]
+  },
+  {
+    "id": 10,
+    "kanji": "十",
+    "heisig": "Diez",
+    "meaning": "Diez, décimo",
+    "onyomi": ["ジュウ", "ジッ"],
+    "kunyomi": ["とお"],
+    "examples": ["十分 (じゅうぶん) - Suficiente", "十日 (とおか) - Día diez"],
+    "story": "Se asemeja a una 'X', representando el número diez en numerales romanos.",
+    "radicales": ["Cruz"]
+  },
+  {
+    "id": 11,
+    "kanji": "口",
+    "heisig": "Boca",
+    "meaning": "Boca, abertura",
+    "onyomi": ["コウ", "ク"],
+    "kunyomi": ["くち"],
+    "examples": ["口 (くち) - Boca", "入口 (いりぐち) - Entrada"],
+    "story": "Un cuadrado que representa una boca, la entrada a algo o una abertura.",
+    "radicales": ["Boca"]
+  },
+  {
+    "id": 12,
+    "kanji": "日",
+    "heisig": "Día",
+    "meaning": "Día, sol",
+    "onyomi": ["ニチ", "ジツ"],
+    "kunyomi": ["ひ", "か"],
+    "examples": ["日曜日 (にちようび) - Domingo", "日光 (にっこう) - Luz solar"],
+    "story": "Pictograma del sol, con una línea en medio representando el concepto de 'día'.",
+    "radicales": ["Sol"]
+  },
+  {
+    "id": 13,
+    "kanji": "月",
+    "heisig": "Mes",
+    "meaning": "Mes, luna",
+    "onyomi": ["ゲツ", "ガツ"],
+    "kunyomi": ["つき"],
+    "examples": ["月曜日 (げつようび) - Lunes", "一月 (いちがつ) - Enero"],
+    "story": "Pictograma de la luna, con las líneas representando el 'hombre en la luna'.",
+    "radicales": ["Luna"]
+  },
+  {
+    "id": 14,
+    "kanji": "田",
+    "heisig": "Campo de arroz",
+    "meaning": "Campo de arroz",
+    "onyomi": ["デン"],
+    "kunyomi": ["た"],
+    "examples": ["田んぼ (たんぼ) - Campo de arroz", "水田 (すいでん) - Campo de arroz inundado"],
+    "story": "Vista aérea de un campo de arroz, dividido en cuatro partes, siguiendo el orden de escritura de izquierda a derecha y de arriba a abajo.",
+    "radicales": ["Campo de arroz"]
+  },
+  {
+    "id": 15,
+    "kanji": "目",
+    "heisig": "Ojo",
+    "meaning": "Ojo, visión",
+    "onyomi": ["モク", "ボク"],
+    "kunyomi": ["め"],
+    "examples": ["目 (め) - Ojo", "目的 (もくてき) - Objetivo"],
+    "story": "Simboliza un ojo, con las líneas horizontales y verticales formando la estructura del ojo.",
+    "radicales": ["Ojo"]
+  },
+  {
+    "id": 16,
+    "kanji": "古",
+    "heisig": "Viejo",
+    "meaning": "Viejo, antiguo",
+    "onyomi": ["コ"],
+    "kunyomi": ["ふる"],
+    "examples": ["古い (ふるい) - Antiguo", "古典 (こてん) - Clásico"],
+    "story": "Como una tumba, representa algo antiguo o viejo.",
+    "radicales": ["Viejo", "Boca"]
+  },
+  {
+    "id": 17,
+    "kanji": "吾",
+    "heisig": "Yo",
+    "meaning": "Yo, mí mismo",
+    "onyomi": ["ゴ"],
+    "kunyomi": ["われ", "わが"],
+    "examples": ["吾輩 (わがはい) - Yo (formal)", "吾々 (われわれ) - Nosotros"],
+    "story": "Cinco agujeros, cinco sentidos, forman al 'yo'.",
+    "radicales": ["Yo", "Cinco", "Boca"]
+  },
+  {
+    "id": 18,
+    "kanji": "冒",
+    "heisig": "Riesgo",
+    "meaning": "Riesgo, atreverse",
+    "onyomi": ["ボウ"],
+    "kunyomi": ["おか"],
+    "examples": ["冒険 (ぼうけん) - Aventura", "冒す (おかす) - Arriesgar"],
+    "story": "No mirar el sol en los ojos, porque es peligroso.",
+    "radicales": ["Sol", "Ojo"]
+  },
+  {
+    "id": 19,
+    "kanji": "朋",
+    "heisig": "Compañero",
+    "meaning": "Compañero, amigo",
+    "onyomi": ["ホウ"],
+    "kunyomi": [],
+    "examples": ["朋党 (ほうとう) - Grupo de amigos", "友朋 (ゆうほう) - Amigos"],
+    "story": "Sangre de mi sangre, cuerpo de mi cuerpo; carne de mi carne.",
+    "radicales": ["Luna", "Luna"]
+  },
+  {
+    "id": 20,
+    "kanji": "明",
+    "heisig": "Luz",
+    "meaning": "Luz, brillante",
+    "onyomi": ["メイ", "ミョウ"],
+    "kunyomi": ["あ", "あか", "あき"],
+    "examples": ["明日 (あした) - Mañana", "明かり (あかり) - Luz"],
+    "story": "La luna y el sol emiten luz.",
+    "radicales": ["Sol", "Luna"]
+  },
+  {
+    "id": 21,
+    "kanji": "唱",
+    "heisig": "Canto",
+    "meaning": "Cantar, recitar",
+    "onyomi": ["ショウ"],
+    "kunyomi": [],
+    "examples": ["合唱 (がっしょう) - Coro", "唱える (となえる) - Cantar, recitar"],
+    "story": "Dos monjes cantan juntos, mientras su canto resuena.",
+    "radicales": ["Boca", "Boca", "Boca"]
+  },
+  {
+    "id": 22,
+    "kanji": "晶",
+    "heisig": "Brillante",
+    "meaning": "Brillante, cristalino",
+    "onyomi": ["ショウ"],
+    "kunyomi": [],
+    "examples": ["水晶 (すいしょう) - Cristal", "結晶 (けっしょう) - Cristalización"],
+    "story": "La luz del sol reflejada en varios puntos, representando algo brillante.",
+    "radicales": ["Sol", "Sol", "Sol"]
+  },
+  {
+    "id": 23,
+    "kanji": "品",
+    "heisig": "Bienes",
+    "meaning": "Artículos, productos",
+    "onyomi": ["ヒン"],
+    "kunyomi": ["しな"],
+    "examples": ["品物 (しなもの) - Mercancía", "商品 (しょうひん) - Producto"],
+    "story": "El mercado son múltiples bocas hambrientas esperando ser alimentadas.",
+    "radicales": ["Boca", "Boca", "Boca"]
+  },
+  {
+    "id": 24,
+    "kanji": "呂",
+    "heisig": "Espina dorsal",
+    "meaning": "Columna vertebral, estructura",
+    "onyomi": ["ロ"],
+    "kunyomi": [],
+    "examples": ["風呂 (ふろ) - Baño", "呂律 (ろれつ) - Articulación"],
+    "story": "Dos partes que sostienen el cuerpo como una columna vertebral.",
+    "radicales": ["Boca", "Boca"]
+  },
+  {
+    "id": 25,
+    "kanji": "昌",
+    "heisig": "Próspero",
+    "meaning": "Próspero, brillante",
+    "onyomi": ["ショウ"],
+    "kunyomi": [],
+    "examples": ["繁昌 (はんじょう) - Prosperidad", "昌平 (しょうへい) - Paz y prosperidad"],
+    "story": "Como el campo que tiene suficiente luz, se vuelve próspero.",
+    "radicales": ["Sol", "Sol"]
+  },
+  {
+    "id": 26,
+    "kanji": "早",
+    "heisig": "Temprano",
+    "meaning": "Temprano, rápido",
+    "onyomi": ["ソウ", "サッ"],
+    "kunyomi": ["はや"],
+    "examples": ["早朝 (そうちょう) - Temprano en la mañana", "早い (はやい) - Rápido, temprano"],
+    "story": "El girasol siempre mira al sol por las mañanas, representando lo temprano.",
+    "radicales": ["Sol", "Girasol"]
+  },
+  {
+    "id": 27,
+    "kanji": "旭",
+    "heisig": "Sol naciente",
+    "meaning": "Amanecer, sol naciente",
+    "onyomi": ["キョク"],
+    "kunyomi": ["あさひ"],
+    "examples": ["旭日 (きょくじつ) - Sol naciente", "旭川 (あさひかわ) - Río Asahi"],
+    "story": "El béisbol es muy popular en Japón, el país del sol naciente.",
+    "radicales": ["Sol", "Nueve"]
+  },
+  {
+    "id": 28,
+    "kanji": "世",
+    "heisig": "Generación",
+    "meaning": "Generación, mundo",
+    "onyomi": ["セイ", "セ"],
+    "kunyomi": ["よ"],
+    "examples": ["世代 (せだい) - Generación", "世界 (せかい) - Mundo"],
+    "story": "10 + 10 + 10, una generación suele ser cada 30 años.",
+    "radicales": ["Diez", "Diez", "Diez"]
+  },
+  {
+    "id": 29,
+    "kanji": "胃",
+    "heisig": "Estómago",
+    "meaning": "Estómago",
+    "onyomi": ["イ"],
+    "kunyomi": [],
+    "examples": ["胃痛 (いつう) - Dolor de estómago", "胃袋 (いぶくろ) - Estómago (coloquial)"],
+    "story": "La parte del cuerpo que soporta el alimento.",
+    "radicales": ["Cuerpo", "Campo de arroz"]
+  },
+  {
+    "id": 30,
+    "kanji": "旦",
+    "heisig": "Amanecer",
+    "meaning": "Amanecer, alba",
+    "onyomi": ["タン", "ダン"],
+    "kunyomi": [],
+    "examples": ["一旦 (いったん) - Temporalmente", "旦那 (だんな) - Esposo"],
+    "story": "Cuando la noche termina, amanece.",
+    "radicales": ["Sol", "Uno"]
+  },
+  {
+    "id": 31,
+    "kanji": "胆",
+    "heisig": "Bilis",
+    "meaning": "Coraje, bilis",
+    "onyomi": ["タン"],
+    "kunyomi": [],
+    "examples": ["大胆 (だいたん) - Audaz", "肝胆 (かんたん) - Corazón y bilis (figurado: alma)"],
+    "story": "La parte del cuerpo que se desborda al amanecer.",
+    "radicales": ["Cuerpo", "Amanecer"]
+  },
+  {
+    "id": 32,
+    "kanji": "亘",
+    "heisig": "Periodo",
+    "meaning": "Periodo, lapso",
+    "onyomi": ["コウ"],
+    "kunyomi": [],
+    "examples": ["永久 (えいきゅう) - Eterno, perpetuo", "周期 (しゅうき) - Ciclo"],
+    "story": "El sol sale, alcanza el cénit y luego se pone, representando el ciclo de la vida.",
+    "radicales": ["Sol", "Horizon"]
+  },
+  {
+    "id": 33,
+    "kanji": "凹",
+    "heisig": "Cóncavo",
+    "meaning": "Cóncavo, hundido",
+    "onyomi": ["オウ"],
+    "kunyomi": [],
+    "examples": ["凹面 (おうめん) - Superficie cóncava", "凹凸 (おうとつ) - Irregularidad"],
+    "story": "Una forma que está hacia adentro, como algo cóncavo.",
+    "radicales": ["Cóncavo"]
+  },
+  {
+    "id": 34,
+    "kanji": "凸",
+    "heisig": "Convexo",
+    "meaning": "Convexo, elevado",
+    "onyomi": ["トツ"],
+    "kunyomi": [],
+    "examples": ["凸面 (とつめん) - Superficie convexa", "凸凹 (でこぼこ) - Desnivelado"],
+    "story": "Una forma que sobresale, como algo convexo.",
+    "radicales": ["Convexo"]
+  },
+  {
+    "id": 35,
+    "kanji": "旧",
+    "heisig": "Viejos tiempos",
+    "meaning": "Antiguo, pasado",
+    "onyomi": ["キュウ"],
+    "kunyomi": ["ふる"],
+    "examples": ["旧友 (きゅうゆう) - Amigo de antaño", "旧市街 (きゅうしがい) - Ciudad antigua"],
+    "story": "Un bastón es necesario para los días pasados, como en los 'buenos tiempos'.",
+    "radicales": ["Bastón de caminar", "Sol"]
+  },
+  {
+    "id": 36,
+    "kanji": "自",
+    "heisig": "Yo/Mío",
+    "meaning": "Yo, propio",
+    "onyomi": ["ジ", "シ"],
+    "kunyomi": ["みずか"],
+    "examples": ["自然 (しぜん) - Naturaleza", "自分 (じぶん) - Uno mismo"],
+    "story": "Un pictograma de la nariz, que representa el 'yo' en Japón.",
+    "radicales": ["Nariz"]
+  },
+  {
+    "id": 37,
+    "kanji": "白",
+    "heisig": "Blanco",
+    "meaning": "Blanco",
+    "onyomi": ["ハク"],
+    "kunyomi": ["しろ", "しら"],
+    "examples": ["白鳥 (はくちょう) - Cisne", "白紙 (はくし) - Papel en blanco"],
+    "story": "Una gota de sol representa el color blanco.",
+    "radicales": ["Gota de sol"]
+  },
+  {
+    "id": 38,
+    "kanji": "百",
+    "heisig": "Cien",
+    "meaning": "Cien",
+    "onyomi": ["ヒャク"],
+    "kunyomi": [],
+    "examples": ["百 (ひゃく) - Cien", "百円 (ひゃくえん) - Cien yenes"],
+    "story": "Un cumpleaños 99 se llama 'cumpleaños blanco' en Japón.",
+    "radicales": ["Blanco"]
+  },
+  {
+    "id": 39,
+    "kanji": "中",
+    "heisig": "Dentro",
+    "meaning": "Centro, dentro",
+    "onyomi": ["チュウ"],
+    "kunyomi": ["なか"],
+    "examples": ["中心 (ちゅうしん) - Centro", "中学校 (ちゅうがっこう) - Escuela secundaria"],
+    "story": "Una madre usando un bastón para ayudar a su hijo a tomar medicina.",
+    "radicales": ["Bastón de caminar", "Boca"]
+  },
+  {
+    "id": 40,
+    "kanji": "千",
+    "heisig": "Mil",
+    "meaning": "Mil",
+    "onyomi": ["セン"],
+    "kunyomi": [],
+    "examples": ["千円 (せんえん) - Mil yenes", "千葉 (ちば) - Chiba (prefectura en Japón)"],
+    "story": "Dos ceros adicionales creados con un gotero, para hacer mil junto al número diez.",
+    "radicales": ["Gota", "Diez"]
+  },
+
+  {
+    "id": 41,
+    "kanji": "舌",
+    "heisig": "Lengua",
+    "meaning": "Lengua",
+    "onyomi": ["ゼツ"],
+    "kunyomi": ["した"],
+    "examples": ["舌打ち (したうち) - Chasquido de lengua", "舌戦 (ぜっせん) - Debate acalorado"],
+    "story": "Aquello que habla por mil bocas.",
+    "radicales": ["Boca", "Mil"]
+  },
+  {
+    "id": 42,
+    "kanji": "升",
+    "heisig": "Caja de sake",
+    "meaning": "Caja de sake, medida",
+    "onyomi": ["ショウ"],
+    "kunyomi": ["ます"],
+    "examples": ["一升 (いっしょう) - Una medida de sake", "升目 (ますめ) - Cuadrícula"],
+    "story": "Una caja utilizada para medir sake.",
+    "radicales": ["Diez", "Uno"]
+  },
+  {
+    "id": 43,
+    "kanji": "昇",
+    "heisig": "Levantar",
+    "meaning": "Ascender, elevar",
+    "onyomi": ["ショウ"],
+    "kunyomi": ["のぼ"],
+    "examples": ["上昇 (じょうしょう) - Subida", "昇進 (しょうしん) - Ascenso"],
+    "story": "Elevarse, como el sol al amanecer.",
+    "radicales": ["Sol", "Caja de sake"]
+  },
+  {
+    "id": 44,
+    "kanji": "丸",
+    "heisig": "Redondear",
+    "meaning": "Redondear, círculo",
+    "onyomi": ["ガン"],
+    "kunyomi": ["まる"],
+    "examples": ["丸める (まるめる) - Redondear", "丸薬 (がんやく) - Píldora redonda"],
+    "story": "Representa la redondez, como el 0.9 que se redondea a 10.",
+    "radicales": ["Gota", "Nueve"]
+  },
+  {
+    "id": 45,
+    "kanji": "寸",
+    "heisig": "Medida",
+    "meaning": "Medida, pulgada",
+    "onyomi": ["スン"],
+    "kunyomi": [],
+    "examples": ["寸法 (すんぽう) - Medida, dimensión", "寸前 (すんぜん) - Justo antes"],
+    "story": "Una pequeña medida, como una pulgada.",
+    "radicales": ["Medida"]
+  },
+  {
+    "id": 46,
+    "kanji": "肘",
+    "heisig": "Codo",
+    "meaning": "Codo",
+    "onyomi": ["チュウ"],
+    "kunyomi": ["ひじ"],
+    "examples": ["肘 (ひじ) - Codo", "肘掛け (ひじかけ) - Reposabrazos"],
+    "story": "La parte del cuerpo que une dos partes, como el codo.",
+    "radicales": ["Cuerpo", "Medida"]
+  },
+  {
+    "id": 47,
+    "kanji": "専",
+    "heisig": "Especialidad",
+    "meaning": "Especialidad, dedicación",
+    "onyomi": ["セン"],
+    "kunyomi": ["もっぱ"],
+    "examples": ["専門 (せんもん) - Especialidad", "専念 (せんねん) - Dedicación"],
+    "story": "Diez campos de estudio juntos representan una especialidad.",
+    "radicales": ["Diez", "Campos"]
+  },
+  {
+    "id": 48,
+    "kanji": "博",
+    "heisig": "Doctor",
+    "meaning": "Doctor, experto",
+    "onyomi": ["ハク", "バク"],
+    "kunyomi": [],
+    "examples": ["博士 (はくし) - Doctorado", "博物館 (はくぶつかん) - Museo"],
+    "story": "Una persona que posee diez especialidades.",
+    "radicales": ["Especialidad", "Diez"]
+  },
+  {
+    "id": 49,
+    "kanji": "占",
+    "heisig": "Adivinar",
+    "meaning": "Predecir, adivinar",
+    "onyomi": ["セン"],
+    "kunyomi": ["うらな", "し"],
+    "examples": ["占い (うらない) - Adivinación", "占星術 (せんせいじゅつ) - Astrología"],
+    "story": "Leer la suerte como una varita mágica que muestra el camino.",
+    "radicales": ["Varita mágica", "Boca"]
+  },
+  {
+    "id": 50,
+    "kanji": "上",
+    "heisig": "Arriba",
+    "meaning": "Arriba, encima",
+    "onyomi": ["ジョウ"],
+    "kunyomi": ["うえ", "あ", "のぼ"],
+    "examples": ["上昇 (じょうしょう) - Subida", "上手 (じょうず) - Hábil"],
+    "story": "El símbolo de algo elevado, colocado sobre el suelo.",
+    "radicales": ["Uno", "Suelo"]
+  },
+  {
+    "id": 51,
+    "kanji": "下",
+    "heisig": "Abajo",
+    "meaning": "Abajo, debajo",
+    "onyomi": ["カ", "ゲ"],
+    "kunyomi": ["した", "さ", "お"],
+    "examples": ["下げる (さげる) - Bajar", "地下 (ちか) - Subterráneo"],
+    "story": "Representa algo colocado debajo del techo.",
+    "radicales": ["Uno", "Techo"]
+  },
+  {
+    "id": 52,
+    "kanji": "卓",
+    "heisig": "Eminencia",
+    "meaning": "Sobresalir, destacado",
+    "onyomi": ["タク"],
+    "kunyomi": [],
+    "examples": ["卓上 (たくじょう) - Sobre la mesa", "卓越 (たくえつ) - Sobresaliente"],
+    "story": "Representa una persona destacada, como alguien que se eleva por encima de los demás.",
+    "radicales": ["Niebla", "Temprano"]
+  },
+  {
+    "id": 53,
+    "kanji": "朝",
+    "heisig": "Mañana",
+    "meaning": "Mañana, amanecer",
+    "onyomi": ["チョウ"],
+    "kunyomi": ["あさ"],
+    "examples": ["朝日 (あさひ) - Sol de la mañana", "毎朝 (まいあさ) - Cada mañana"],
+    "story": "El momento en que la niebla se queda, pero la noche se va.",
+    "radicales": ["Niebla", "Luna"]
+  },
+  {
+    "id": 54,
+    "kanji": "嘲",
+    "heisig": "Burla",
+    "meaning": "Burlarse, mofarse",
+    "onyomi": ["チョウ"],
+    "kunyomi": ["あざけ"],
+    "examples": ["嘲笑 (ちょうしょう) - Risa burlona", "嘲る (あざける) - Burlarse de"],
+    "story": "Representa a alguien riéndose burlonamente, usando la boca para expresar burla.",
+    "radicales": ["Boca", "Mañana"]
+  },
+  {
+    "id": 55,
+    "kanji": "唯",
+    "heisig": "Único",
+    "meaning": "Único, sólo",
+    "onyomi": ["ユイ"],
+    "kunyomi": [],
+    "examples": ["唯一 (ゆいいつ) - Único", "唯物論 (ゆいぶつろん) - Materialismo"],
+    "story": "Un monstruo voraz (gran boca), el único en su especie.",
+    "radicales": ["Boca"]
+  },
+  {
+    "id": 56,
+    "kanji": "貝",
+    "heisig": "Almeja",
+    "meaning": "Almeja, molusco",
+    "onyomi": ["バイ"],
+    "kunyomi": ["かい"],
+    "examples": ["貝 (かい) - Almeja, molusco", "貝殻 (かいがら) - Concha de almeja"],
+    "story": "Una almeja tiene los ojos justo junto a los pies.",
+    "radicales": []
+  },
+  {
+    "id": 57,
+    "kanji": "唄",
+    "heisig": "Canción pop",
+    "meaning": "Canción popular",
+    "onyomi": ["バイ"],
+    "kunyomi": ["うた"],
+    "examples": ["歌唄 (うたばい) - Canción", "唄 (うた) - Canción"],
+    "story": "Si las almejas cantaran, cantarían pop.",
+    "radicales": ["Boca", "Almeja"]
+  },
+  {
+    "id": 58,
+    "kanji": "貞",
+    "heisig": "De pie",
+    "meaning": "Integridad, castidad",
+    "onyomi": ["テイ"],
+    "kunyomi": [],
+    "examples": ["貞操 (ていそう) - Castidad", "貞節 (ていせつ) - Fidelidad"],
+    "story": "Si una almeja fresca se mantuviera de pie, sería la definición de integridad.",
+    "radicales": ["Almeja", "Pie"]
+  },
+  {
+    "id": 59,
+    "kanji": "員",
+    "heisig": "Personal",
+    "meaning": "Miembro, personal",
+    "onyomi": ["イン"],
+    "kunyomi": [],
+    "examples": ["会社員 (かいしゃいん) - Empleado de empresa", "店員 (てんいん) - Dependiente"],
+    "story": "Un miembro del equipo mantiene la boca cerrada y hace lo que se le dice.",
+    "radicales": ["Boca", "Almeja"]
+  },
+  {
+    "id": 60,
+    "kanji": "貼",
+    "heisig": "Pegar",
+    "meaning": "Pegar, adherir",
+    "onyomi": ["チョウ"],
+    "kunyomi": ["は"],
+    "examples": ["貼る (はる) - Pegar", "切手を貼る (きってをはる) - Pegar un sello"],
+    "story": "Pegar una galleta almeja (chiina) en mi teléfono.",
+    "radicales": ["Almeja", "Pegar"]
+  },
+  {
+    "id": 61,
+    "kanji": "見",
+    "heisig": "Mirar",
+    "meaning": "Ver, observar",
+    "onyomi": ["ケン"],
+    "kunyomi": ["み"],
+    "examples": ["見える (みえる) - Ser visible", "見物 (けんぶつ) - Turismo"],
+    "story": "El humano observa.",
+    "radicales": ["Ojo", "Piernas humanas"]
+  },
+  {
+    "id": 62,
+    "kanji": "児",
+    "heisig": "Recién nacido",
+    "meaning": "Niño, bebé",
+    "onyomi": ["ジ", "ニ"],
+    "kunyomi": ["こ"],
+    "examples": ["小児 (しょうに) - Niño pequeño", "育児 (いくじ) - Crianza de niños"],
+    "story": "El recién nacido empieza a sentir el tiempo y da vida a este mundo.",
+    "radicales": ["Piernas humanas", "Ver"]
+  },
+  {
+    "id": 63,
+    "kanji": "元",
+    "heisig": "Inicio",
+    "meaning": "Comienzo, origen",
+    "onyomi": ["ゲン", "ガン"],
+    "kunyomi": ["もと"],
+    "examples": ["元気 (げんき) - Salud, energía", "元日 (がんじつ) - Día de Año Nuevo"],
+    "story": "Al principio, como Adán y Eva, todo empieza desde el origen.",
+    "radicales": ["Dos", "Piernas humanas"]
+  },
+  {
+    "id": 64,
+    "kanji": "頁",
+    "heisig": "Página",
+    "meaning": "Página",
+    "onyomi": ["ケツ"],
+    "kunyomi": [],
+    "examples": ["ページ (ページ) - Página", "表紙 (ひょうし) - Cubierta de libro"],
+    "story": "Se abre una almeja para revelar una página de sabiduría.",
+    "radicales": ["Cabeza", "Almeja"]
+  },
+  {
+    "id": 65,
+    "kanji": "頑",
+    "heisig": "Terco",
+    "meaning": "Obstinado, firme",
+    "onyomi": ["ガン"],
+    "kunyomi": [],
+    "examples": ["頑固 (がんこ) - Terquedad", "頑張る (がんばる) - Esforzarse"],
+    "story": "Adán y Eva con una determinación de cabeza dura, como una almeja.",
+    "radicales": ["Cabeza", "Inicio"]
+  },
+  {
+    "id": 66,
+    "kanji": "凡",
+    "heisig": "Mediocre",
+    "meaning": "Ordinario, común",
+    "onyomi": ["ボン"],
+    "kunyomi": [],
+    "examples": ["平凡 (へいぼん) - Común, promedio", "凡人 (ぼんじん) - Persona común"],
+    "story": "Como una gota de viento al viento, algo mediocre y sin particularidad.",
+    "radicales": ["Gota", "Viento"]
+  },
+  {
+    "id": 67,
+    "kanji": "負",
+    "heisig": "Derrota",
+    "meaning": "Perder, derrota",
+    "onyomi": ["フ"],
+    "kunyomi": ["ま", "お"],
+    "examples": ["負ける (まける) - Perder", "負担 (ふたん) - Carga, responsabilidad"],
+    "story": "Una almeja encadenada se enfrenta a la derrota.",
+    "radicales": ["Almeja", "Encadenado"]
+  },
+  {
+    "id": 68,
+    "kanji": "万",
+    "heisig": "Diez mil",
+    "meaning": "Diez mil",
+    "onyomi": ["マン", "バン"],
+    "kunyomi": [],
+    "examples": ["一万 (いちまん) - Diez mil", "万歳 (ばんざい) - Hurra, larga vida"],
+    "story": "Un cero añadido a 10 veces mil.",
+    "radicales": ["Diez", "Gota"]
+  },
+  {
+    "id": 69,
+    "kanji": "句",
+    "heisig": "Oración",
+    "meaning": "Frase, oración",
+    "onyomi": ["ク"],
+    "kunyomi": [],
+    "examples": ["句 (く) - Frase", "俳句 (はいく) - Haiku"],
+    "story": "Algo encapsulado y limitado por una boca, formando una oración.",
+    "radicales": ["Boca", "Encadenado"]
+  },
+  {
+    "id": 70,
+    "kanji": "肌",
+    "heisig": "Textura",
+    "meaning": "Piel, textura",
+    "onyomi": ["キ"],
+    "kunyomi": ["はだ"],
+    "examples": ["肌 (はだ) - Piel", "肌触り (はだざわり) - Sensación al tacto"],
+    "story": "Cuando mi piel (parte del cuerpo) toca algo, su textura cambia.",
+    "radicales": ["Carne", "Encadenado"]
+  },
+  {
+    "id": 71,
+    "kanji": "旬",
+    "heisig": "Decamerón",
+    "meaning": "Temporada, período de 10 días",
+    "onyomi": ["ジュン"],
+    "kunyomi": [],
+    "examples": ["旬 (じゅん) - Temporada", "旬の野菜 (しゅんのやさい) - Verduras de temporada"],
+    "story": "Pasar diez días junto con otras personas es un decamerón.",
+    "radicales": ["Diez", "Día"]
+  },
+  {
+    "id": 72,
+    "kanji": "勺",
+    "heisig": "Cucharón",
+    "meaning": "Cucharón, cuchara",
+    "onyomi": ["シャク"],
+    "kunyomi": [],
+    "examples": ["一勺 (いっしゃく) - Una medida de cucharón", "勺子 (しゃくし) - Cucharón"],
+    "story": "Recoger hasta la última gota con un cucharón.",
+    "radicales": ["Cuchara", "Gota"]
+  },
+  {
+    "id": 73,
+    "kanji": "的",
+    "heisig": "Tiro al blanco",
+    "meaning": "Objetivo",
+    "onyomi": ["テキ"],
+    "kunyomi": ["まと"],
+    "examples": ["目的 (もくてき) - Propósito", "的 (まと) - Blanco, objetivo"],
+    "story": "Usamos el cuchara como tiro al blanco.",
+    "radicales": ["Blanco", "Cuchara"]
+  },
+  {
+    "id": 74,
+    "kanji": "首",
+    "heisig": "Cuello",
+    "meaning": "Cuello, cabeza",
+    "onyomi": ["シュ"],
+    "kunyomi": ["くび"],
+    "examples": ["首 (くび) - Cuello", "首都 (しゅと) - Capital"],
+    "story": "El verdugo cuelga la cabeza de la víctima por el cuello.",
+    "radicales": ["Cabeza", "Ver"]
+  },
+  {
+    "id": 75,
+    "kanji": "乙",
+    "heisig": "Tripas de pescado",
+    "meaning": "Tripas, peculiar",
+    "onyomi": ["オツ"],
+    "kunyomi": [],
+    "examples": ["乙女 (おとめ) - Doncella", "乙種 (おつしゅ) - Tipo B"],
+    "story": "Las tripas de pescado, usadas también como anzuelo.",
+    "radicales": []
+  },
+  {
+    "id": 76,
+    "kanji": "乱",
+    "heisig": "Motín",
+    "meaning": "Confusión, caos",
+    "onyomi": ["ラン"],
+    "kunyomi": ["みだ"],
+    "examples": ["乱れる (みだれる) - Estar en desorden", "反乱 (はんらん) - Rebelión"],
+    "story": "Cuando muchas lenguas causan un motín, son colgadas en un anzuelo.",
+    "radicales": ["Lengua", "Anzuelo"]
+  },
+  {
+    "id": 77,
+    "kanji": "直",
+    "heisig": "Enseguida",
+    "meaning": "Directo, recto",
+    "onyomi": ["チョク", "ジキ"],
+    "kunyomi": ["ただ"],
+    "examples": ["直接 (ちょくせつ) - Directamente", "正直 (しょうじき) - Honestidad"],
+    "story": "Cuando los ojos se enfocan enseguida en algo, resulta en algo recto y claro.",
+    "radicales": ["Diez", "Ojo"]
+  },
+  {
+    "id": 78,
+    "kanji": "具",
+    "heisig": "Herramienta",
+    "meaning": "Implemento, equipo",
+    "onyomi": ["グ"],
+    "kunyomi": [],
+    "examples": ["道具 (どうぐ) - Herramientas", "家具 (かぐ) - Muebles"],
+    "story": "El carpintero usa herramientas que liberan de su mesa.",
+    "radicales": ["Ojos", "Mesa"]
+  },
+  {
+    "id": 79,
+    "kanji": "真",
+    "heisig": "Verdad",
+    "meaning": "Verdadero, real",
+    "onyomi": ["シン"],
+    "kunyomi": ["ま"],
+    "examples": ["真実 (しんじつ) - Verdad", "写真 (しゃしん) - Fotografía"],
+    "story": "Si usas diez herramientas, se dice que siempre tienes la verdad.",
+    "radicales": ["Diez", "Ojos"]
+  },
+  {
+    "id": 80,
+    "kanji": "工",
+    "heisig": "Construir",
+    "meaning": "Trabajo, fabricación",
+    "onyomi": ["コウ", "ク"],
+    "kunyomi": [],
+    "examples": ["工場 (こうじょう) - Fábrica", "工作 (こうさく) - Manualidades"],
+    "story": "El barro de construcción crea algo estructurado y artificial.",
+    "radicales": ["Herramienta"]
+  },
+  {
+    "id": 81,
+    "kanji": "左",
+    "heisig": "Izquierda",
+    "meaning": "Izquierda",
+    "onyomi": ["サ"],
+    "kunyomi": ["ひだり"],
+    "examples": ["左右 (さゆう) - Izquierda y derecha", "左手 (ひだりて) - Mano izquierda"],
+    "story": "Del lado que usa el carpintero sus herramientas (izquierda).",
+    "radicales": ["Construir", "Boca"]
+  },
+  {
+    "id": 82,
+    "kanji": "右",
+    "heisig": "Derecha",
+    "meaning": "Derecha",
+    "onyomi": ["ウ", "ユウ"],
+    "kunyomi": ["みぎ"],
+    "examples": ["右折 (うせつ) - Giro a la derecha", "右手 (みぎて) - Mano derecha"],
+    "story": "Del lado que dice la verdad (derecha, lo correcto).",
+    "radicales": ["Construir", "Boca"]
+  },
+  {
+    "id": 83,
+    "kanji": "有",
+    "heisig": "Poseído",
+    "meaning": "Tener, existir",
+    "onyomi": ["ユウ"],
+    "kunyomi": ["あ"],
+    "examples": ["有名 (ゆうめい) - Famoso", "所有 (しょゆう) - Posesión"],
+    "story": "La carne es posesión a un lado de lo que se ha ganado.",
+    "radicales": ["Lado", "Carne"]
+  },
+  {
+    "id": 84,
+    "kanji": "賄",
+    "heisig": "Soborno",
+    "meaning": "Soborno",
+    "onyomi": ["ワイ"],
+    "kunyomi": [],
+    "examples": ["贈賄 (ぞうわい) - Soborno", "収賄 (しゅうわい) - Corrupción"],
+    "story": "Aquel poseedor de dinero es fácilmente sobornado.",
+    "radicales": ["Dinero", "Poseído"]
+  },
+  {
+    "id": 85,
+    "kanji": "貢",
+    "heisig": "Tributo",
+    "meaning": "Tributo, impuesto",
+    "onyomi": ["コウ", "ク"],
+    "kunyomi": [],
+    "examples": ["貢献 (こうけん) - Contribución", "年貢 (ねんぐ) - Tributo anual"],
+    "story": "Tributo o impuesto como un constructo económico.",
+    "radicales": ["Dinero", "Trabajo"]
+  },
+  {
+    "id": 86,
+    "kanji": "項",
+    "heisig": "Párrafo",
+    "meaning": "Párrafo, sección",
+    "onyomi": ["コウ"],
+    "kunyomi": [],
+    "examples": ["項目 (こうもく) - Elemento, artículo", "事項 (じこう) - Asuntos, puntos"],
+    "story": "El escritor construye un párrafo usando secciones estructuradas.",
+    "radicales": ["Cabeza", "Página"]
+  },
+  {
+    "id": 87,
+    "kanji": "刀",
+    "heisig": "Espada",
+    "meaning": "Espada, sable",
+    "onyomi": ["トウ"],
+    "kunyomi": ["かたな"],
+    "examples": ["日本刀 (にほんとう) - Espada japonesa", "刀剣 (とうけん) - Espadas"],
+    "story": "Representa una espada, símbolo de poder.",
+    "radicales": ["Espada"]
+  },
+  {
+    "id": 88,
+    "kanji": "刃",
+    "heisig": "Cuchilla",
+    "meaning": "Cuchilla, hoja afilada",
+    "onyomi": ["ジン", "ニン"],
+    "kunyomi": ["は"],
+    "examples": ["刃物 (はもの) - Instrumento cortante", "刀刃 (とうじん) - Filo de una espada"],
+    "story": "Representa una cuchilla con sangre porque alguien cortó con ella.",
+    "radicales": ["Espada", "Sangre"]
+  },
+  {
+    "id": 89,
+    "kanji": "切",
+    "heisig": "Cortar",
+    "meaning": "Cortar, partir",
+    "onyomi": ["セツ", "サイ"],
+    "kunyomi": ["き"],
+    "examples": ["切る (きる) - Cortar", "切手 (きって) - Estampilla"],
+    "story": "El chef corta en cubitos el sofé con precisión.",
+    "radicales": ["Espada", "Diez"]
+  },
+  {
+    "id": 90,
+    "kanji": "召",
+    "heisig": "Seducir",
+    "meaning": "Invocar, llamar",
+    "onyomi": ["ショウ"],
+    "kunyomi": ["め"],
+    "examples": ["召し上がる (めしあがる) - Comer (formal)", "召喚 (しょうかん) - Convocar"],
+    "story": "El espadachín seduce usando la boca.",
+    "radicales": ["Boca", "Espada"]
+  },
+  {
+    "id": 91,
+    "kanji": "昭",
+    "heisig": "Brillante",
+    "meaning": "Brillante",
+    "onyomi": ["ショウ"],
+    "kunyomi": [],
+    "examples": ["昭和 (しょうわ) - Era Shōwa", "昭然 (しょうぜん) - Claro, evidente"],
+    "story": "Para brillar, el dios sol exige su devoción.",
+    "radicales": ["Sol", "Boca"]
+  },
+  {
+    "id": 92,
+    "kanji": "則",
+    "heisig": "Reglas",
+    "meaning": "Regla, norma",
+    "onyomi": ["ソク"],
+    "kunyomi": [],
+    "examples": ["規則 (きそく) - Reglas", "法則 (ほうそく) - Ley, norma"],
+    "story": "La espada en los negocios representa la firmeza en las reglas.",
+    "radicales": ["Espada", "Dinero"]
+  },
+  {
+    "id": 93,
+    "heisig": "Vis",
+    "kanji": "副",
+    "meaning": "Segunda en importancia",
+    "description": "El señor que tiene riquezas y poder, es el segundo al mando."
+  },
+  {
+    "id": 94,
+    "heisig": "Separado",
+    "kanji": "別",
+    "meaning": "Separado, dividido",
+    "description": "Separados, el samurai encabritado grita al ser separado de su katana."
+  },
+  {
+    "id": 95,
+    "heisig": "Calle",
+    "kanji": "丁",
+    "meaning": "Calle",
+    "description": "La señal de tránsito en la avenida Juárez."
+  },
+  {
+    "id": 96,
+    "heisig": "Villa",
+    "kanji": "町",
+    "meaning": "Villa, poblado",
+    "description": "Calles rodeando los campos de la villa."
+  },
+  {
+    "id": 97,
+    "heisig": "Poder",
+    "kanji": "可",
+    "meaning": "Poder, habilidad",
+    "description": "El tren grita ¡puedo hacerlo!... mientras clava estacas en el suelo."
+  },
+  {
+    "id": 98,
+    "heisig": "Poner en la cabeza",
+    "kanji": "頂",
+    "meaning": "Poner en la cabeza",
+    "description": "Pedrito puso un chorrito en su cabeza."
+  },
+  {
+    "id": 99,
+    "heisig": "Niño",
+    "kanji": "子",
+    "meaning": "Niño, hijo",
+    "description": "Niños de todo el mundo se toman de las manos."
+  },
+  {
+    "id": 100,
+    "heisig": "Cavidad",
+    "kanji": "孔",
+    "meaning": "Cavidad, agujero",
+    "description": "Un niño tiene miedo de hacer un hoyo con el azadón."
+  },
+  {
+    "id": 101,
+    "heisig": "Completo",
+    "kanji": "了",
+    "meaning": "Completo, finalizado",
+    "description": "El niño, satisfecho de completar su tarea, camina con los amigos en los bordes."
+  },
+  {
+    "id": 102,
+    "heisig": "Mujer",
+    "kanji": "女",
+    "meaning": "Mujer",
+    "description": "Símbolo que representa el género femenino."
+  },
+  {
+    "id": 103,
+    "heisig": "Acariciar",
+    "kanji": "好",
+    "meaning": "Acariciar, amor maternal",
+    "description": "La madre acaricia a su hijo con ternura."
+  },
+  {
+    "id": 104,
+    "heisig": "Semejanza",
+    "kanji": "如",
+    "meaning": "Semejanza, parecido",
+    "description": "Los labios de una mujer son bien parecidos."
+  },
+  {
+    "id": 105,
+    "heisig": "Mamá",
+    "kanji": "母",
+    "meaning": "Madre, mamá",
+    "description": "La figura materna que simboliza cuidado y afecto."
+  },
+  {
+    "id": 106,
+    "heisig": "Penetrar",
+    "kanji": "貫",
+    "meaning": "Penetrar, atravesar",
+    "description": "Penetra tus pechos con aretes (piercings de anillo)."
+  },
+  {
+    "id": 107,
+    "heisig": "Hermano Mayor",
+    "kanji": "兄",
+    "meaning": "Hermano mayor, adolescente",
+    "description": "Figura de autoridad juvenil, el hermano mayor."
+  },
+  {
+    "id": 108,
+    "heisig": "Maldecir",
+    "kanji": "呪",
+    "meaning": "Maldecir",
+    "description": "Mi hermano mayor utiliza groserías, maldice."
+  },
+  {
+    "id": 109,
+    "heisig": "Sobreponerse",
+    "kanji": "克",
+    "meaning": "Sobreponerse, superar",
+    "description": "El hermano se sobrepuso a la muerte."
+  },
+  {
+    "id": 110,
+    "heisig": "Pequeño",
+    "kanji": "小",
+    "meaning": "Pequeño, diminuto",
+    "description": "Representa algo diminuto o de tamaño reducido."
+  },
+  {
+    "id": 111,
+    "heisig": "Poco",
+    "kanji": "少",
+    "meaning": "Poco, un poco",
+    "description": "Un poco de algo pequeño."
+  },
+  {
+    "id": 112,
+    "heisig": "Grande",
+    "kanji": "大",
+    "meaning": "Grande, amplio",
+    "description": "Algo o alguien con gran presencia, como un paso abriendo los brazos."
+  },
+  {
+    "id": 113,
+    "heisig": "Muchos",
+    "kanji": "多",
+    "meaning": "Muchos",
+    "description": "Algo que ocurre muchas veces o en grandes cantidades."
+  },
+  {
+    "id": 114,
+    "heisig": "Anochecer",
+    "kanji": "夕",
+    "meaning": "Anochecer",
+    "description": "Representa el momento en que comienza a caer la noche."
+  },
+  {
+    "id": 115,
+    "heisig": "Eventide",
+    "kanji": "汐",
+    "meaning": "Gotas de anochecer",
+    "description": "Pequeñas gotas que se asocian con el caer de la noche, sin una traducción directa en español."
+  },
+  {
+    "id": 116,
+    "heisig": "Afuera",
+    "kanji": "外",
+    "meaning": "Afuera",
+    "description": "Representa el concepto de estar fuera o en el exterior."
+  },
+  {
+    "id": 117,
+    "heisig": "Nombre",
+    "kanji": "名",
+    "meaning": "Nombre",
+    "description": "En la noche, una boca pronuncia el nombre que acompañará a alguien durante su vida."
+  },
+  {
+    "id": 118,
+    "heisig": "Piedra",
+    "kanji": "石",
+    "meaning": "Roca, piedra",
+    "description": "Símbolo de una piedra sólida y fuerte."
+  },
+  {
+    "id": 119,
+    "heisig": "Semblanza",
+    "kanji": "肖",
+    "meaning": "Semblanza, semejanza",
+    "description": "Indica la semejanza o parecido a algo."
+  },
+  {
+    "id": 120,
+    "heisig": "Nitrato",
+    "kanji": "硝",
+    "meaning": "Nitrato",
+    "description": "Piedra que al quemarse produce fragmentos que se expanden como el nitrato."
+  },
+  {
+    "id": 121,
+    "heisig": "Aplastar",
+    "kanji": "砕",
+    "meaning": "Romper, aplastar",
+    "description": "Romper algo con gran fuerza, como una roca siendo impactada."
+  },
+  {
+    "id": 122,
+    "heisig": "Arena",
+    "kanji": "砂",
+    "meaning": "Arena",
+    "description": "La arena contiene fragmentos de roca."
+  },
+  {
+    "id": 123,
+    "heisig": "Celos",
+    "kanji": "妬",
+    "meaning": "Celos, envidia",
+    "description": "Representa la envidia, como una mujer celosa de un diamante (roca)."
+  },
+  {
+    "id": 124,
+    "heisig": "Aplanar",
+    "kanji": "削",
+    "meaning": "Aplanar, raspar",
+    "description": "El acto de raspar o aplanar una superficie, como un cuchillo alisar carne."
+  },
+  {
+    "id": 125,
+    "heisig": "Rayo",
+    "kanji": "光",
+    "meaning": "Luz, rayo",
+    "description": "Representa un destello o rayo de luz."
+  },
+  {
+    "id": 126,
+    "heisig": "Azotar",
+    "kanji": "太",
+    "meaning": "Azotar, golpear",
+    "description": "Simboliza a una persona grande que hace ruido después de impactar."
+  },
+  {
+    "id": 127,
+    "heisig": "Utensilios",
+    "kanji": "器",
+    "meaning": "Herramientas, utensilios",
+    "description": "Representa herramientas usadas por un trabajador rodeado de personas hambrientas."
+  },
+  {
+    "id": 128,
+    "heisig": "Apetitoso",
+    "kanji": "臭",
+    "meaning": "Olor, apestoso",
+    "description": "Representa el olor que un perro detecta con su nariz."
+  },
+  {
+    "id": 129,
+    "heisig": "Olfatear",
+    "kanji": "嗅",
+    "meaning": "Olfatear",
+    "description": "El acto de oler o inhalar con la nariz."
+  },
+  {
+    "id": 130,
+    "heisig": "Exquisito",
+    "kanji": "妙",
+    "meaning": "Exquisito, delicado",
+    "description": "Algo raro y único, representado con mujeres escasas pero exquisitas."
+  },
+  {
+    "id": 131,
+    "heisig": "Enfocar",
+    "kanji": "省",
+    "meaning": "Enfocar, examinar",
+    "description": "Concentrarse en pocas cosas con los ojos, logrando una visión clara."
+  },
+  {
+    "id": 132,
+    "heisig": "Grueso",
+    "kanji": "厚",
+    "meaning": "Grueso, denso",
+    "description": "Representa algo denso o grueso, como el suelo bajo el niño."
+  },
+  {
+    "id": 133,
+    "heisig": "Extraño",
+    "kanji": "奇",
+    "meaning": "Extraño, curioso",
+    "description": "Algo inusual o extraño, como un perro con algo peculiar en la boca."
   }
 ]

@@ -71,6 +71,16 @@ public class KanjiInputActivity extends AppCompatActivity {
                 Toast.makeText(KanjiInputActivity.this, "Images saved to gallery", Toast.LENGTH_SHORT).show();
             }
         });
+
+        // Retry button logic to clear the canvas
+        Button retryButton = findViewById(R.id.retry_drawing_button);
+        retryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                kanjiCanvasView.clearCanvas(); // Clear the canvas
+                Toast.makeText(KanjiInputActivity.this, "Canvas cleared", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     // Save image to gallery method

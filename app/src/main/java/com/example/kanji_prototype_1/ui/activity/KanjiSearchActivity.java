@@ -17,6 +17,8 @@ import com.example.kanji_prototype_1.R;
 import com.example.kanji_prototype_1.ui.adapter.KanjiAdapter;
 import com.example.kanji_prototype_1.ui.data.KanjiDataRepository;
 import com.example.kanji_prototype_1.ui.model.Kanji;
+import com.example.kanji_prototype_1.ui.view.KanjiCanvasView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +29,7 @@ public class KanjiSearchActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private EditText searchText;
     private KanjiDataRepository kanjiDataRepository;
+    private View drawingContainer;  // Define drawing container as a View
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +47,8 @@ public class KanjiSearchActivity extends AppCompatActivity {
         // Initialize UI components
         searchText = findViewById(R.id.search_text);
         Button sendButton = findViewById(R.id.send_button);
+        Button drawButton = findViewById(R.id.draw_button);
+        drawingContainer = findViewById(R.id.drawing_container);  // Find the drawing container
 
         // Initialize RecyclerView with the adapter and click listener
         recyclerView = findViewById(R.id.kanji_results_recycler);
@@ -64,6 +69,21 @@ public class KanjiSearchActivity extends AppCompatActivity {
         });
 
         sendButton.setOnClickListener(v -> performSearch());
+
+        // Toggle visibility of drawing container when draw button is clicked
+        drawButton.setOnClickListener(v -> toggleDrawingContainer());
+    }
+
+    // Method to toggle the visibility of the drawing container
+    private void toggleDrawingContainer() {
+        if (drawingContainer.getVisibility() == View.GONE) {
+            drawingContainer.setVisibility(View.VISIBLE);
+            Log.d("KanjiSearchActivity", "Showing drawing container");
+        } else {
+            drawingContainer.setVisibility(View.GONE);
+            Log.d("KanjiSearchActivity", "Hiding drawing container");
+        }
+        drawingContainer.requestLayout();  // Request layout update to apply changes
     }
 
     private void performSearch() {

@@ -77,6 +77,23 @@
             android:textSize="18sp"
             android:layout_marginTop="8dp" />
 
+        <!-- New TextViews for Story and Radicales -->
+        <TextView
+            android:id="@+id/story_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Historia"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/radicales_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Radicales"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" />
+
         <!-- Placeholder for future stroke order GIF -->
         <ImageView
             android:id="@+id/stroke_order_gif"

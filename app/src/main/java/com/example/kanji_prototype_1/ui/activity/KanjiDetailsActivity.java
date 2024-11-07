@@ -63,6 +63,8 @@ public class KanjiDetailsActivity extends AppCompatActivity {
         TextView meaning = findViewById(R.id.meaning);
         TextView example1 = findViewById(R.id.example_1);
         TextView example2 = findViewById(R.id.example_2);
+        TextView storyText = findViewById(R.id.story_text);
+        TextView radicalesText = findViewById(R.id.radicales_text);
         ImageView strokeOrderGif = findViewById(R.id.stroke_order_gif);
 
         // Set Kanji details
@@ -70,9 +72,11 @@ public class KanjiDetailsActivity extends AppCompatActivity {
         heisigDescription.setText("Heisig: " + kanji.getHeisig());
         onyomiReading.setText("Onyomi: " + String.join(", ", kanji.getOnyomi()));
         kunyomiReading.setText("Kunyomi: " + String.join(", ", kanji.getKunyomi()));
-        meaning.setText("Meaning: " + kanji.getMeaning());
+        meaning.setText("Significado: " + kanji.getMeaning());
         example1.setText(kanji.getExamples().size() > 0 ? kanji.getExamples().get(0) : "");
         example2.setText(kanji.getExamples().size() > 1 ? kanji.getExamples().get(1) : "");
+        storyText.setText("Historia: " + kanji.getStory());
+        radicalesText.setText("Radicales: " + String.join(", ", kanji.getRadicales()));
 
         // Optional: Load the stroke order GIF if available
         // Glide.with(this).load(kanji.getStrokeOrderGif()).into(strokeOrderGif);

@@ -58,15 +58,32 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- A Button to submit the drawing at the bottom -->
-    <Button
-        android:id="@+id/submit_drawing_button"
+    <!-- Retry and Submit buttons at the bottom -->
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enviar"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="20dp"
-        android:backgroundTint="@color/colorButtonBackground"
-        android:textColor="@color/colorText" />
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <!-- Retry Button -->
+        <Button
+            android:id="@+id/retry_drawing_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reintentar"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/colorButtonBackground"
+            android:textColor="@color/colorText" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_drawing_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:backgroundTint="@color/colorButtonBackground"
+            android:textColor="@color/colorText" />
+    </LinearLayout>
 
 </LinearLayout>
